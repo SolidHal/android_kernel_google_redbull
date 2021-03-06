@@ -58,12 +58,8 @@
 	status = "disabled";
 };
 
-&sde_dp {
-	status = "disabled";
-};
-
 &mdss_mdp {
-	connectors = <&sde_wb &sde_dsi &sde_rscc>;
+	connectors = <&sde_wb &sde_dsi &sde_dp &sde_rscc>;
 };
 
 &pm8150l_wled {
